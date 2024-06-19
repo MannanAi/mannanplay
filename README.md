@@ -6,4 +6,4 @@ Latest Version (Version 3.0)
 <a href="url">Mannan Play Android & Android TV</a>
 
 
-<a href="https://apk.e-droid.net/apk_t/app3164049_4945.apk?v=1">Mannan Play Firetv Stick & Tablets </a>
+<a href="https://apk.e-droid.net/apk_t/app3164049_4945.apk?v=1">Mannan Play Firetv Stick</a>
