@@ -3,52 +3,7 @@
 
 <title>videojs-contrib-hls embed</title>
   
-  <!--
 
-  Uses the latest versions of video.js and videojs-contrib-hls.
-
-  To use specific versions, please change the URLs to the form:
-
-  <link href="https://vjs.zencdn2.net/5.16.0/video-js.css" rel="stylesheet">
-  <script src="https://vjs.zencdn2.net/5.16.0/video.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-  -->
-
-  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet"></link>
-  <script src="https://unpkg.com/video.js/dist/video.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  
-<head>
-
-
-<div style="position: fixed;   top: 0px; width: 100%"><center>
-<video id="my-video" class="video-js vjs-default-skin vjs-fluid" controls preload="none"
-  width="640" height="364" poster="https://i.postimg.cc/zXYCmPmb/20240527-165227.jpg" data-setup="{}">
-    <source src="https://jk3lz82elw79-hls-live.5centscdn.com/Geo/eae835e83c0494a376229f254f7d3392.sdp/Geo/eae835e83c0494a376229f254f7d3392.sdp2/chunks_dvr.m3u8" type='application/x-mpegURL'>
-    <source src="https://jk3lz82elw79-hls-live.5centscdn.com/Geo/eae835e83c0494a376229f254f7d3392.sdp/Geo/eae835e83c0494a376229f254f7d3392.sdp2/chunks_dvr.m3u8" type='application/x-mpegURL'>
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a web browser that
-      <li  data-url=="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-    </p>
-  </video>
- </div>
-</body>
-</html>
-    <ul id="playlist">
-
-  <script>
-  $(function(){
-$("#playlist li").on("click", function() {
-var player = videojs('my-video');
-player.pause();
-var new_url = $(this).attr("data-url");
-player.src(new_url);
-// set src track corresponding to new movie //
-player.load();
-player.play();
-});
-});</script>
 	<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,7 +14,6 @@ player.play();
 
 <body>
  <ul id="playlist">
-<div style="align=center; padding-top: 55%;">
 <h4 style="text-align: center;">GEC CHANNELS</h4>
 <ul style="list-style-type:none">
 <style>ul{padding-left:0px; text-align:center;}
@@ -68,7 +22,7 @@ li{ display:inline-block;padding:0px;}
 
 
 
-     <li data-url="http://rasinetworks.in:1935/rasimusic/rasimusic.stream_aac/index.m3u8"><img src="https://image-winudf-com.cdn.ampproject.org/ii/AW/s/image.winudf.com/v2/image/aW5kaWFtYXRyaXgucmFzaXR2X2ljb25fMTUzMTU0MTk1NF8wNjc/icon.png?w=184&fakeurl=1"  border="3px"></li>
+     <li data-url="vlc://http://rasinetworks.in:1935/rasimusic/rasimusic.stream_aac/index.m3u8"><img src="https://image-winudf-com.cdn.ampproject.org/ii/AW/s/image.winudf.com/v2/image/aW5kaWFtYXRyaXgucmFzaXR2X2ljb25fMTUzMTU0MTk1NF8wNjc/icon.png?w=184&fakeurl=1"  border="3px"></li>
 
 
 	 
@@ -215,4 +169,4 @@ if(e)
 {
 	e.setAttribute('unselectable',on);
 }
-</script
+								     </script>
