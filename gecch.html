@@ -3,17 +3,63 @@
 
 <title>videojs-contrib-hls embed</title>
   
+  <!--
 
+  Uses the latest versions of video.js and videojs-contrib-hls.
+
+  To use specific versions, please change the URLs to the form:
+
+  <link href="https://vjs.zencdn2.net/5.16.0/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn2.net/5.16.0/video.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  -->
+
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet"></link>
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  
+<head>
+
+
+<div style="position: fixed;   top: 0px; width: 100%"><center>
+<video id="my-video" class="video-js vjs-default-skin vjs-fluid" controls preload="none"
+  width="640" height="364" poster="https://img.cdndtl.co.uk/umbraco2017/22708/on-demand-tv-red.png?w=600&auto=format&s=1305e631eb06fbecc32d4e2725a9bb06" data-setup="{}">
+    <source src="http://eypv0ag4.siauliairsavlt.pw/iptv/WTRMLWF6MHW5NG/6692/index.m3u8" type='application/x-mpegURL'>
+    <source src="http://eypv0ag4.siauliairsavlt.pw/iptv/WTRMLWF6MHW5NG/6692/index.m3u8" type='application/x-mpegURL'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <li  data-url=="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+ </div>
+</body>
+</html>
+    <ul id="playlist">
+
+  <script>
+  $(function(){
+$("#playlist li").on("click", function() {
+var player = videojs('my-video');
+player.pause();
+var new_url = $(this).attr("data-url");
+player.src(new_url);
+// set src track corresponding to new movie //
+player.load();
+player.play();
+});
+});</script>
 	<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Home</title>
+		<title>Mannan Play | GEC</title>
 
     </head>
 		<body>
 
 <body>
  <ul id="playlist">
+<div style="align=center; padding-top: 55%;">
 <h4 style="text-align: center;">GEC CHANNELS</h4>
 <ul style="list-style-type:none">
 <style>ul{padding-left:0px; text-align:center;}
@@ -22,15 +68,33 @@ li{ display:inline-block;padding:0px;}
 
 
 
-     <li data-url="vlc://http://rasinetworks.in:1935/rasimusic/rasimusic.stream_aac/index.m3u8"><img src="https://image-winudf-com.cdn.ampproject.org/ii/AW/s/image.winudf.com/v2/image/aW5kaWFtYXRyaXgucmFzaXR2X2ljb25fMTUzMTU0MTk1NF8wNjc/icon.png?w=184&fakeurl=1"  border="3px"></li>
+     <li data-url="http://rasinetworks.in:1935/rasitamil/rasitamil.stream_aac/index.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjZiveHtTF1rBQJrO0Zsvqg5IsE8WlJvIMg30g3_ri3yfktBEd--Z_3OE&s=10"  border="3px"></li>
 
-
+<li data-url="https://idvd.multitvsolution.com/idvo/imayamtv_540p.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwanoCm_KjXnQbN1ECoYGGBJc5dMBcmPnklviFiDyt9rR4kDV-ZCRwKV0&s=10"  border="3px"></li>
 	 
-          
+     
+
+
+
+<li data-url="https://idvd.multitvsolution.com/idvo/moontv_540p.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5QLRoS4l4Xa3Oy3kyoPpE6HPs1MYNQb2lLQ&s"  border="3px"></li>
+
+
+
+
+
+
+
+
+
+<li data-url="http://94.154.156.130:8080/jayatv/index.m3u8"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_TV_HD.png"  border="3px"></li>
+
+<li data-url="http://94.154.156.130:8080/flowerstv/index.m3u8"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Flower_TV.png"  border="3px"></li>
+
+
  </section> 				
 						         </div>
 						        <br> <hr size="0.7" color="#444">
-						      <h5><p style="text-align: center;">© Respective Owners Powered By Mannan Play</span></span></p>
+						      <h5   <p style="text-align: center;">© Respective Owners Powered By Mannan Play </span></span></p>
 	</div>
 
 <style>
@@ -169,4 +233,4 @@ if(e)
 {
 	e.setAttribute('unselectable',on);
 }
-								     </script>
+</script>
