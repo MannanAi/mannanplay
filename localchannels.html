@@ -1,225 +1,266 @@
-<html><head>
+<html>
+<head>
+
 <title>Local Channels</title>
-<meta name="viewport"content="width=device-width,initial-scale=1"></meta>
-<script src="https://cdn.radiantmediatechs.com/rmp/5.10.2/js/rmp.min.js"></script>    
-<div class="row">
-<div class="col-sm-12">
-<div class="rmp-playlist-container">
-<div class="rmp-playlist-player-wrapper">
-<div id="rmpPlayer"></div>
+  
+  <!--
+
+  Uses the latest versions of video.js and videojs-contrib-hls.
+
+  To use specific versions, please change the URLs to the form:
+
+  <link href="https://vjs.zencdn2.net/5.16.0/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn2.net/5.16.0/video.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  -->
+
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet"></link>
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  
+<head>
+
+
+<div style="position: fixed;   top: 0px; width: 100%"><center>
+<video id="my-video" class="video-js vjs-default-skin vjs-fluid" controls preload="none"
+  width="640" height="364" poster="https://i.postimg.cc/rpmb415B/20240620-175403.jpg" data-setup="{}">
+    <source src="https://cdn.onecloudlive.in/musicstartv/musicstartv/index.m3u8" type='application/x-mpegURL'>
+    <source src="https://cdn.onecloudlive.in/musicstartv/musicstartv/index.m3u8" type='application/x-mpegURL'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <li  data-url=="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+ </div>
+</body>
+</html>
+    <ul id="playlist">
+
+  <script>
+  $(function(){
+$("#playlist li").on("click", function() {
+var player = videojs('my-video');
+player.pause();
+var new_url = $(this).attr("data-url");
+player.src(new_url);
+// set src track corresponding to new movie //
+player.load();
+player.play();
+});
+});</script>
+	<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+
+    </head>
+		<body>
+
+<body>
+ <ul id="playlist">
+<div style="align=center; padding-top: 55%;">
+<h4 style="text-align: center;">LOCAL CHANNELS</h4>
+<ul style="list-style-type:none">
+<style>ul{padding-left:0px; text-align:center;}
+li{ display:inline-block;padding:0px;}
+</style>
+
+
+
+     <li data-url="https://ipcloud.live/sachintv/sachintvhd/index.m3u8""><img src="https://play-lh.googleusercontent.com/zIxPwwtHkMxE343iGVJmIaqzNSzDLpJT19NHjmr8hyYTMUNtmfPw59X_eG4OtgVaAMDZ=w240-h480-rw"  border="3px"></li>
+
+<li data-url="http://applelive.in/thalapathytv/thalapathytv.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FRQ_Q-M8pJ6vs7gkxhLIyKZfKX0QuNaTq3gzGcfwrMoRYdp7IpBtAavO&s=10"  border="3px"></li>
+	 
+
+
+
+<li data-url="http://notvstream.in/aasaitv/aasaitv.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxphVapY9Zvy6RU0KRnqhuEObNANJkbKmhjHkQ4AqSRQ&s"  border="3px"></li>
+
+
+<li data-url="http://media.7starcloud.com:1935/harimedia/vinayagahd/playlist.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREe8D4I0q8PdlENddvjMpzZI4zKgrwNf0OSprdH_1Esg&s"  border="3px"></li>
+
+<li data-url="http://media.7starcloud.com:1935/harimedia/vinayagamusic/playlist.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREe8D4I0q8PdlENddvjMpzZI4zKgrwNf0OSprdH_1Esg&s"  border="3px"></li>
+
+<li data-url="http://nextgeninfotech.ddns.net:8080/reachtwo/reachtwo.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCONEN-EziWvEVDBsufbgvWnViYSsDU1TO66AWODUZVmzlUn9HzN7abrA&s=10"  border="3px"></li>
+
+<li data-url="http://media.7starcloud.com:1935/harimedia/mkptv/playlist.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjYiBSRl_jTP3AOMK7dhdl8IVNW2zzFYRUZU128ZtiOg&s"  border="3px"></li>
+
+<li data-url="http://media.7starcloud.com:1935/harimedia/duraistv/playlist.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcAwuda2BEA_YhHbOwhDSzAqlqHrKDgl0bU5OjJRECQ&s"  border="3px"></li>
+
+<li data-url="http://media.7starcloud.com:1935/harimedia/udhayamtv/playlist.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdoJ_xj7dCzum8aEbZ5Y9yP3tly6tksXEQWAzyZJmSp9wVL_WFpmNZR5E&s=10"  border="3px"></li>
+
+<li data-url="http://media.7starcloud.com:1935/erodekrishnatv/livestream/playlist.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFEBfRXS7v2TiFA6ZqZd9NaFZTayNCuqTB39zuTPLY0ZZLi2V2jtRHftE&s=10"  border="3px"></li>
+
+<li data-url="http://nextgeninfotech.ddns.net:8080/anbu/anbu.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXtRZqzt40vpDvKZburjT04cDGbqDqIWSDMi30LIXInw&s"  border="3px"></li>
+
+<li data-url="http://stream.singamcloud.in/tamilstartv/tamilstartv/index.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfk0E-xCFHuwHNZ5ZIPdalxT1eITnsY5HBhhgDvIumJIFCdLQ1q7vVs41&s=10"  border="3px"></li>
+
+
+
+<li data-url="http://bmlive.net:8000/ctn/ctn/bms.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT8hbuba4L7CYfXE0FWBXsmWda4wPncx-Q2hqTiv0HIw&s"  border="3px"></li>
+
+<li data-url="http://media.7starcloud.com:1935/live/7star/playlist.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKIxH25VedGbzlquRF2mTf-Muv9Y7ghd6ipIgi0R31Eg&s"  border="3px"></li>
+
+<li data-url="https://ipcloud.live/msntv/saamitv/index.m3u8"><img src="https://play-lh.googleusercontent.com/MLUMPZo-7Rqw8dwCwLjOuerZfXLCZ6FN_pP9kkZ-qioIsGTKHs6PU5kyIAH800X4wg"  border="3px"></li>
+
+<li data-url="https://ipcloud.live/sachintv/musichd/index.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfyKD0lYgtvhaIdaXp0oNe9dCGDToii1rBww&s"  border="3px"></li>
+
+<li data-url="https://gemtv.circle7stream.com/gem/fcce47a8559e30755582c396ce7fce9e.sdp/playlist.m3u8"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxARDw4OEBAQEQ8PEBUVFRAQEA8REBAQFRIWFxUSFRMYHSggGhslHhMVLTEhJSkrLi4uFx8/ODMsQygyLisBCgoKDg0OGxAQGy0lICMuLSs3LS01LS0rLS0vKy0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcBBAUDAgj/xABLEAABAwIDAwYJBgwEBwAAAAABAAIDBBEFEiEGMVEHExciQXEUMlNhgZGSk9EkQnKCobIWIzVDUmJzo7GzwdIzNKLCFURkdITw8f/EABoBAQACAwEAAAAAAAAAAAAAAAABBAIDBQb/xAAxEQEAAgEDAwIFAgUFAQAAAAAAAQIDBBESEyFRFDEFIjJBgTPwFSNhobFScZHR4UL/2gAMAwEAAhEDEQA/ALxQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBB4VFXHHbnHtbfdmIBPcECKsjd4rgfWgy+pYN7retBqS45TM8aZo9Dvgg1/wpod3hDPU/4INqnxmnf4krXd2b4IN1rgRcbkH0gICAgICAgwSgieK8oeHU8roHyPe9hs7moy9rXdrS7dcKxTS5LxvENFtRSs7S1OlTDOM/uT8Vn6HL4R6rGdKmGcZ/cn4p6HL4PVYzpUwzjP7k/FPQ5fCPVYzpUwzjP7k/FPQ5fB6rGdKmGcZ/cn4p6HL4PVYzpUwzjP7k/FPQ5fB6rGdKmGcZ/cn4p6HL4PVYzpUwzjP7k/FPQ5fB6rGdKmGcZ/cn4p6HL4PVYzpUwzjP7k/FPQ5fB6rGdKmGcZ/cn4p6HL4PVYzpUwzjP7k/FPQ5fB6rGweU+gcC2LnnSkHK10Ra0uA0ub6BYZNLkpXlZnTUUtO0Kg2i2vqpZ5MkrgbkOkHjOI7Gn5rR2WW/Bp423s15c077Vc+LaTEBuraod08g/qrUYKeFfrW8vs7T4id9dV+/l+Ky9PTwjrX8vB+NVjvGqqh3fK8/1T09PB1reXwK2ftnlJ+m5T6enhHWt5e0eL1bfFqahvdK8f1T09P9J1r+XQw/bfFKd7XsrJn2Osc7jLG4cC13Z3EHzrXfT45+zOue0L/wBj8fbX0UNY1uQvBD2XvkkaS1zb9ouNDwIXKyU4W2X6W5Ru7SwZCAgICAg4u12KeC0VRPfVkZy+d50aPWQtmKnO8VYZLcazL83Ek3JNydST2k7yvQbOQICAgICAgICAgICJEHR2eZeoYP1XfdVXWfpS36b9SEflb+Mk+m77xWWKPlhjk90h2SwJtRJnmzCnjGZ1jlMhvowHsB1ufMbcRzfiPxWum+Sne3+FrSaK2X5rdodobO0T5j1HxwjQuD5DGw30uXEntHafQNVwZ+Naye/KP+IdT+H4PDffshSieOLmXZDmzEyylzrMcRuNgLgKP43q/wDV/aD+H4PH93n+ClJK9zGMkhDbZpXPe+JgJsLknQ+b7baqa/GdZP8A9R/xCJ+H4I+393xjuxUbGhkN2vuBne5zg76Q3ekALfp/jueuT+b3q15fhuO1Pk7SgtXTujc6N7S1"  border="3px"></li>
+
+<li data-url="https://account26.livebox.co.in/kinghls/live.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBROtWcLd9VMm1zWKNvRVxUg_t15qpnil3Y4vym87a_GTI56zTd5HpKUg&s=10"  border="3px"></li>
+
+<li data-url="https://live.we2live.in/rcntv/rcntv/playlist.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgrCbRWPu7JSTCWhlCfEl99bqC0_uTnoVNDviFmlXe_z7lPNTDmNl4hsc&s=10"  border="3px"></li>
+
+<li data-url="https://ipcloud.live/sachintv/dhonitv/index.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wGaPPNH1vLS3RKo6j7wUPoFsZkzGwZtU4Q&s"  border="3px"></li>
+
+<li data-url="https://cdn.onecloudlive.in/rnr/rnrhd/index.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wGaPPNH1vLS3RKo6j7wUPoFsZkzGwZtU4Q&s"  border="3px"></li>
+
+<li data-url="https://cdn.onecloudlive.in/tcn/tcn/index.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wGaPPNH1vLS3RKo6j7wUPoFsZkzGwZtU4Q&s"  border="3px"></li>
+
+<li data-url="https://cdn.onecloudlive.in/musicstartv/musicstartv/index.m3u8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wGaPPNH1vLS3RKo6j7wUPoFsZkzGwZtU4Q&s"  border="3px"></li>
+
+
+ </section> 				
+						         </div>
+						        <br> <hr size="0.7" color="#444">
+						      <h5   <p style="text-align: center;">© Respective Owners Powered By Mannan Play</span></span></p>
+	</div>
+
 <style>
-body{
-height:100%;
-width:100%;
-margin:0;
-padding:0;
-background:#fff;
+img{border-radius: 20px ; border-color: white; padding: 2px; margin:5px; height:85px; width: 85px;}
+		body{background-color: #1a1a1a;}
+        </style>
+<style>
+  body {
+  margin-left:0px;
+  margin-right:0px;
+    margin-top: 0px;
+    background: #222;
+    text-align: center; 
+    color: #aaa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+</style>
+
+<script id="wpcp_disable_selection" type="text/javascript">
+//<![CDATA[
+var image_save_msg='You Can Not Save images!';
+	var no_menu_msg='Context Menu disabled!';
+	var smessage = "Content is protected !!";
+
+function disableEnterKey(e)
+{
+	if (e.ctrlKey){
+     var key;
+     if(window.event)
+          key = window.event.keyCode;     //IE
+     else
+          key = e.which;     //firefox (97)
+    //if (key != 17) alert(key);
+     if (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85  || key == 86 || key == 83 || key == 43)
+     {
+          show_wpcp_message('You are not allowed to copy content or view source');
+          return false;
+     }else
+     	return true;
+     }
+}
+
+function disable_copy(e)
+{	
+	var elemtype = e.target.nodeName;
+	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+	elemtype = elemtype.toUpperCase();
+	var checker_IMG = '';
+	if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		if (smessage !== "" && e.detail == 2)
+			show_wpcp_message(smessage);
+		
+		if (isSafari)
+			return true;
+		else
+			return false;
+	}	
+}
+function disable_copy_ie()
+{
+	var elemtype = window.event.srcElement.nodeName;
+	elemtype = elemtype.toUpperCase();
+	if (elemtype == "IMG") {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		//alert(navigator.userAgent.indexOf('MSIE'));
+			//if (smessage !== "") show_wpcp_message(smessage);
+		return false;
+	}
+}	
+function reEnable()
+{
+	return true;
+}
+document.onkeydown = disableEnterKey;
+document.onselectstart = disable_copy_ie;
+if(navigator.userAgent.indexOf('MSIE')==-1)
+{
+	document.onmousedown = disable_copy;
+	document.onclick = reEnable;
+}
+function disableSelection(target)
+{
+    //For IE This code will work
+    if (typeof target.onselectstart!="undefined")
+    target.onselectstart = disable_copy_ie;
+    
+    //For Firefox This code will work
+    else if (typeof target.style.MozUserSelect!="undefined")
+    {target.style.MozUserSelect="none";}
+    
+    //All other  (ie: Opera) This code will work
+    else
+    target.onmousedown=function(){return false}
+    target.style.cursor = "default";
+}
+//Calling the JS function directly just after body load
+window.onload = function(){disableSelection(document.body);};
+//]]>
+</script>
+	<script id="wpcp_disable_Right_Click" type="text/javascript">
+	//<![CDATA[
+	document.ondragstart = function() { return false;}
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	Disable context menu on images by GreenLava Version 1.0
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+	    function nocontext(e) {
+	       return false;
+	    }
+	    document.oncontextmenu = nocontext;
+	//]]>
+	</script>
+<style>
+.unselectable
+{
+-moz-user-select:none;
+-webkit-user-select:none;
+cursor: default;
+}
+html
+{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 </style>
-</head> 
-<!-- { src: 
-{ hls:"#"}, "contentMetadata": 
-{ "title": "#", "description": "#", "thumbnail":"#", "poster": [ "#" ] },}, -->
-   
-<script> var playlistData =  [
-
-{ src: 
-{ hls:"https://ipcloud.live/sachintv/sachintvhd/index.m3u8"}, 
-"contentMetadata": { 
-"title": "Sachin TV", 
-"description": "Local Channel", 
-"thumbnail":"https://play-lh.googleusercontent.com/zIxPwwtHkMxE343iGVJmIaqzNSzDLpJT19NHjmr8hyYTMUNtmfPw59X_eG4OtgVaAMDZ=w240-h480-rw", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://applelive.in/thalapathytv/thalapathytv.m3u8"}, 
-"contentMetadata": { 
-"title": "Thalapathy TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FRQ_Q-M8pJ6vs7gkxhLIyKZfKX0QuNaTq3gzGcfwrMoRYdp7IpBtAavO&s=10", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg"] },},
-
-{ src: 
-{ hls:"http://notvstream.in/aasaitv/aasaitv.m3u8"}, 
-"contentMetadata": { 
-"title": "AASAI TV KARUR", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxphVapY9Zvy6RU0KRnqhuEObNANJkbKmhjHkQ4AqSRQ&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://media.7starcloud.com:1935/harimedia/vinayagahd/playlist.m3u8"}, 
-"contentMetadata": { 
-"title": "Vinayaga HD", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREe8D4I0q8PdlENddvjMpzZI4zKgrwNf0OSprdH_1Esg&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://media.7starcloud.com:1935/harimedia/vinayagamusic/playlist.m3u8"}, 
-"contentMetadata": { 
-"title": "Vinayaga Music", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREe8D4I0q8PdlENddvjMpzZI4zKgrwNf0OSprdH_1Esg&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://nextgeninfotech.ddns.net:8080/reachtwo/reachtwo.m3u8"}, 
-"contentMetadata": { 
-"title": "SLS TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCONEN-EziWvEVDBsufbgvWnViYSsDU1TO66AWODUZVmzlUn9HzN7abrA&s=10", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://media.7starcloud.com:1935/harimedia/mkptv/playlist.m3u8"}, 
-"contentMetadata": { 
-"title": "MKP TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjYiBSRl_jTP3AOMK7dhdl8IVNW2zzFYRUZU128ZtiOg&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://media.7starcloud.com:1935/harimedia/duraistv/playlist.m3u8"}, 
-"contentMetadata": { 
-"title": "Durais TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcAwuda2BEA_YhHbOwhDSzAqlqHrKDgl0bU5OjJRECQ&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://media.7starcloud.com:1935/harimedia/udhayamtv/playlist.m3u8"}, 
-"contentMetadata": { 
-"title": "Udhayam TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdoJ_xj7dCzum8aEbZ5Y9yP3tly6tksXEQWAzyZJmSp9wVL_WFpmNZR5E&s=10", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://media.7starcloud.com:1935/erodekrishnatv/livestream/playlist.m3u8"}, 
-"contentMetadata": { 
-"title": "Erode Krishna TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFEBfRXS7v2TiFA6ZqZd9NaFZTayNCuqTB39zuTPLY0ZZLi2V2jtRHftE&s=10", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://nextgeninfotech.ddns.net:8080/anbu/anbu.m3u8"}, 
-"contentMetadata": { 
-"title": "Anbu TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXtRZqzt40vpDvKZburjT04cDGbqDqIWSDMi30LIXInw&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://stream.singamcloud.in/tamilstartv/tamilstartv/index.m3u8"}, 
-"contentMetadata": { 
-"title": "Tamil Star TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfk0E-xCFHuwHNZ5ZIPdalxT1eITnsY5HBhhgDvIumJIFCdLQ1q7vVs41&s=10", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://bmlive.net:8000/ctn/ctn/bms.m3u8"}, 
-"contentMetadata": { 
-"title": "City Television Network", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT8hbuba4L7CYfXE0FWBXsmWda4wPncx-Q2hqTiv0HIw&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"http://media.7starcloud.com:1935/live/7star/playlist.m3u8"}, 
-"contentMetadata": { 
-"title": "7 star TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKIxH25VedGbzlquRF2mTf-Muv9Y7ghd6ipIgi0R31Eg&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"https://ipcloud.live/msntv/saamitv/index.m3u8"}, 
-"contentMetadata": { 
-"title": "SAAMI TV", 
-"description": "Local Channel", 
-"thumbnail":"https://play-lh.googleusercontent.com/MLUMPZo-7Rqw8dwCwLjOuerZfXLCZ6FN_pP9kkZ-qioIsGTKHs6PU5kyIAH800X4wg", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"https://ipcloud.live/sachintv/musichd/index.m3u8"}, 
-"contentMetadata": { 
-"title": "Sachin music TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfyKD0lYgtvhaIdaXp0oNe9dCGDToii1rBww&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"https://gemtv.circle7stream.com/gem/fcce47a8559e30755582c396ce7fce9e.sdp/playlist.m3u8"}, 
-"contentMetadata": { 
-"title": "Gem TV", 
-"description": "Local Channel", 
-"thumbnail":"data:image/jpeg;base64,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xOpJPFe6pSKV4w81a0zO8vl6SQsLkYd8paOMkn8kLj6z6/w6Wm+j8rxVNYEBAQYKD89cqlS9+KTZxYMYxrPOzLckfWLvUu1ooiMXZzNTM9TuiCuK5dAQEQIkUApQyiWEN2URuwiWUQIkQSvkukDcWprm2ZsgHfzbtPsVXWR/Klv00/zEWxZhZVVTHAhzaiUEHQg845Rit8sJyx80vFrlYiWnZklN0bJHs3tSaeGamla6SItaYwDqHMlbIIyf0DY91zx04mv+FRnvyp2323/7dLTa2ccbW77ezi1VU+aR80pzSSG5O4DzAdgHBdbTYKYMcUpHaFHNktktNpeeZb92rZ5vcsLSyiFkcjFO7n4320LpXfVDAy/rXH1dt8n4dLTxtRdwVVvEBAQEHDxXZemqHZ5GAu4kBTFpj2lG0Of+AVH5NvqCnnbyjjXwwdgKPybfZCnqW8nGvhg8n9H5NvshOpbzJwr4Y6P6PybfZCdS/k4V8MdHtH5NvshOpfzJwr4Ojyi8m32QnUv5k4V8MdHlF5NvshOrfycK+GOjui8m32QnVv5k4V8HR1ReTb7ITqX8ycK+Do6ovJt9kJ1b+ZOFfDHR1ReTb7IU9W/mThXwdHVF5NvshOrfzJwr4Ojmi8m32R8E6t/MnCvg6OaLybfZCdW/mUcK+HrS7A0sUjJY2hr43BzXAAEEdqicl57TKYpWPs423HJnHWympjkMFQ4AOcG545baAvZcEOsLXB77rbh1E07fZryYoshcnJHWtF/CKc9zZ/7VZjWx4afTT5cyq5PaxnzmO+iyY/7VPra+Eelny0vwOq72sfdzf2p62viT0s+W9S7BVb/nsb9Jkw/2qfXV8Sj0k+XSi5LKx3/MU47xN/ap9bXwelny26TkjnzDnqhjm38WBriSPputl9RWq+t3jtDOul8ytHZTZuOijs0AOLQ2w3MYPmg9uu89qozMzO8rURtG0O+oSICAgICAgICAgICAgICAgICAgICAgICAgIMWQLIMoCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg/9k=", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"https://account26.livebox.co.in/kinghls/live.m3u8"}, 
-"contentMetadata": { 
-"title": "King TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBROtWcLd9VMm1zWKNvRVxUg_t15qpnil3Y4vym87a_GTI56zTd5HpKUg&s=10", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"https://live.we2live.in/rcntv/rcntv/playlist.m3u8"}, 
-"contentMetadata": { 
-"title": "Rainbow TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgrCbRWPu7JSTCWhlCfEl99bqC0_uTnoVNDviFmlXe_z7lPNTDmNl4hsc&s=10", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"https://ipcloud.live/sachintv/dhonitv/index.m3u8"}, 
-"contentMetadata": { 
-"title": "Dhoni TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wGaPPNH1vLS3RKo6j7wUPoFsZkzGwZtU4Q&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"https://cdn.onecloudlive.in/rnr/rnrhd/index.m3u8"}, 
-"contentMetadata": { 
-"title": "RNR HD", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wGaPPNH1vLS3RKo6j7wUPoFsZkzGwZtU4Q&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"https://cdn.onecloudlive.in/tcn/tcn/index.m3u8"}, 
-"contentMetadata": { 
-"title": "Thillai TV", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wGaPPNH1vLS3RKo6j7wUPoFsZkzGwZtU4Q&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-{ src: 
-{ hls:"https://cdn.onecloudlive.in/musicstartv/musicstartv/index.m3u8"}, 
-"contentMetadata": { 
-"title": "Music Star", 
-"description": "Local Channel", 
-"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wGaPPNH1vLS3RKo6j7wUPoFsZkzGwZtU4Q&s", 
-"poster": [ "https://i.postimg.cc/8k9s1DhZ/20240527-074022.jpg" ] },},
-
-];var settings = {
-licenseKey: 'Kl8lbz16cz1rN2l2enM9Z2M9NnZvMnllaT9yb201ZGFzaXMzMGRiMEElXyo=',
-skin: 's3',
-posterScaleMode: 'stretch',
-automaticFullscreenOnLandscape: true,
-preload: 'nono',
-playlistUpNextAutoplay: true,
-playlistEndedLoop: false,
-playlistData: playlistData
-};var elementID = 'rmpPlayer'; var rmp = new RadiantMP(elementID); rmp.init(settings); 
-</script> 
-</div>
-</div>
-</div>
-</body> 
-</html>  
+<script id="wpcp_css_disable_selection" type="text/javascript">
+var e = document.getElementsByTagName('body')[0];
+if(e)
+{
+	e.setAttribute('unselectable',on);
+}
+</script>
